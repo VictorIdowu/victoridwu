@@ -32,7 +32,7 @@ body {
 }
 
 .hover {
-  @apply hover:text-secondary-100;
+  @apply hover:text-secondary-200;
 }
 
 .sections {
