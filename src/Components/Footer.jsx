@@ -1,14 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const Footer = (props) => {
-  const [active, setActive] = useState("");
+const Footer = ({ active, setActive }) => {
   const currentYear = new Date().getFullYear();
-
-  useEffect(() => {
-    console.log(window.location.pathname.length);
-    if (window.location.pathname.length < 2) setActive("");
-  });
 
   return (
     <footer className={`footer ease-in duration-500 bg-basketball`}>

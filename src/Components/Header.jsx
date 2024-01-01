@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const Header = (props) => {
+const Header = ({ setActive }) => {
   const [time, setTime] = useState("");
 
   useEffect(() => {
     const interval = setInterval(async () => {
-      const date = await new Date();
-      const hour = await date.getHours();
-      const mins = await date.getMinutes();
+      const date = new Date();
+      const hour = date.getHours();
+      const mins = date.getMinutes();
 
       const period = hour >= 12 ? "PM" : "AM";
 
@@ -16,7 +16,7 @@ const Header = (props) => {
 
       const time12 = `${hours12}:${mins < 10 ? "0" + mins : mins} ${period}`;
 
-      setTime((prevTime) => time12);
+      setTime(time12);
     }, 1000);
 
     return () => clearInterval(interval);
@@ -27,7 +27,11 @@ const Header = (props) => {
       data-aos="fade-down"
       className={`header flex place-content-between ease-in duration-500 bg-transparent`}
     >
-      <Link to="/" className="md:text-2xl font-medium cursor-pointer hover">
+      <Link
+        onClick={() => setActive("")}
+        to="/"
+        className="md:text-2xl font-medium cursor-pointer hover"
+      >
         Victor Idowu
       </Link>
       <p className="text-xs items-center flex gap-2">
