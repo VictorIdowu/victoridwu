@@ -1,26 +1,23 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const Footer = (props) => {
+const Footer = ({ active, setActive }) => {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className={`footer ease-in duration-500 bg-basketball`}>
       <ul className="flex text-base sm:text-xl gap-10">
-        <li className="nav">
-          <Link to="/about" className="hover">
-            About
-          </Link>
-        </li>
-        <li className="nav">
-          <Link to="/contact" className="hover">
-            Contact
-          </Link>
-        </li>
-        <li className="nav">
-          <Link to="/projects" className="hover">
-            Projects
-          </Link>
-        </li>
+        {["About", "Contact", "Projects"].map((item, i) => (
+          <li key={i + 1} className={`nav `}>
+            <Link
+              onClick={() => setActive(item)}
+              to={`/${item.toLowerCase()}`}
+              className={`hover ${active === item && "text-secondary-200"}`}
+            >
+              {item}
+            </Link>
+          </li>
+        ))}
       </ul>
       <p className="">
         © <span className="year">{currentYear}</span> VictorIdowu
