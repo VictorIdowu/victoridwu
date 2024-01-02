@@ -70,7 +70,7 @@ const Projects = () => {
   });
 
   return (
-    <section ref={ref} className="sections mb-44">
+    <section ref={ref} className="sections mb-10">
       <h2 data-aos="fade-down" className={`h2 mb-7 ease-in duration-300 `}>
         My Projects
       </h2>
@@ -78,7 +78,7 @@ const Projects = () => {
         style={{
           scale: scrollYProgress,
         }}
-        className={`grid grid-cols-1 gap-7 sm:gap-10 lg:grid-cols-2 xl:gap-15 ease-in-out duration-1000 `}
+        className={`grid grid-cols-1 gap-7 sm:gap-10 lg:grid-cols-2 xl:gap-15 ease-in-out duration-1000`}
       >
         {projects.map((project, i) => (
           <Project items={project} key={i + 1} />

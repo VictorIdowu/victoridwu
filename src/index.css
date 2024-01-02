@@ -9,14 +9,7 @@ html {
 }
 
 body {
-  background-color: #191919;
-  max-width: 1400px;
-  margin: 0 auto;
-  position: relative;
-}
-
-body {
-  @apply bg-fabric;
+  @apply bg-fabric bg-[#191919] relative;
 }
 
 .header {
@@ -36,7 +29,7 @@ body {
 }
 
 .sections {
-  @apply mt-28 md:mt-44 sm:px-5 xl:px-16;
+  @apply mt-28 md:mt-44 xl:px-16;
 }
 
 .social {
