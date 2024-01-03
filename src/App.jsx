@@ -2,6 +2,7 @@ import Body from "./Components/Body";
 import { Icon } from "@iconify/react";
 
 function App() {
+  const currentYear = new Date().getFullYear();
   return (
     <main className="text-primary-100 font-body">
       <Body />
@@ -40,7 +41,7 @@ function App() {
           </div>
         </div>
         <p className="text-xs text-primary-300">
-          Copyright © Victor Idowu 2024 All rights Reserved
+          Copyright © Victor Idowu {currentYear} All rights Reserved
         </p>
       </div>
     </main>

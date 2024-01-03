@@ -1,9 +1,6 @@
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Footer = ({ active, setActive }) => {
-  const currentYear = new Date().getFullYear();
-
   return (
     <footer className={`footer ease-in duration-500 bg-basketball`}>
       <ul className="flex text-base sm:text-xl gap-10">
@@ -19,9 +16,6 @@ const Footer = ({ active, setActive }) => {
           </li>
         ))}
       </ul>
-      <p className="">
-        © <span className="year">{currentYear}</span> VictorIdowu
-      </p>
     </footer>
   );
 };
