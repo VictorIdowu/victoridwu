@@ -1,28 +1,46 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Icon } from "@iconify/react";
 
-const Footer = ({ active, setActive }) => {
+const Footer = () => {
   const currentYear = new Date().getFullYear();
-
   return (
-    <footer className={`footer ease-in duration-500 bg-basketball`}>
-      <ul className="flex text-base sm:text-xl gap-10">
-        {["About", "Contact", "Projects"].map((item, i) => (
-          <li key={i + 1} className={`nav `}>
-            <Link
-              onClick={() => setActive(item)}
-              to={`/${item.toLowerCase()}`}
-              className={`hover ${active === item && "text-secondary-200"}`}
-            >
-              {item}
-            </Link>
-          </li>
-        ))}
-      </ul>
-      <p className="">
-        © <span className="year">{currentYear}</span> VictorIdowu
+    <div className="border-t-[0.002px] border-primary-300 mb-24 flex flex-col items-center w-full text-sm py-20 gap-10">
+      <h5 className="">Built with:</h5>
+      <div className="flex gap-4">
+        <div className="flex gap-1 items-center">
+          <Icon icon="logos:react" />
+          <a
+            href="https://react.com"
+            target="_blank"
+            className="hover:underline"
+          >
+            React
+          </a>
+        </div>
+        <div className="flex gap-1 items-center">
+          <Icon icon="devicon:tailwindcss" />
+          <a
+            href="https://tailwindcss.com"
+            target="_blank"
+            className="hover:underline"
+          >
+            Tailwind
+          </a>
+        </div>
+        <div className="flex gap-1 items-center">
+          <Icon icon="devicon:vercel" />
+          <a
+            href="https://vercel.com"
+            target="_blank"
+            className="hover:underline"
+          >
+            Vercel
+          </a>
+        </div>
+      </div>
+      <p className="text-xs text-primary-300">
+        Copyright © Victor Idowu {currentYear} All rights Reserved
       </p>
-    </footer>
+    </div>
   );
 };
 

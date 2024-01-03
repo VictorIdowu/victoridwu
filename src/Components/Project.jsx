@@ -8,7 +8,7 @@ const Project = ({ items }) => {
   return (
     <div
       data-aos="flip-left"
-      className=" rounded-lg overflow-hidden shadow-md hover:shadow-lg shadow-primary-300/50 hover:shadow-primary-300/50 relative"
+      className="rounded-lg overflow-hidden shadow-md hover:shadow-lg shadow-primary-300/50 hover:shadow-primary-300/50 relative"
       onMouseEnter={() => setProjectHovered(true)}
       onMouseLeave={() => setProjectHovered(false)}
     >

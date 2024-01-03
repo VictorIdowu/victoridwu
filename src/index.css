@@ -9,14 +9,7 @@ html {
 }
 
 body {
-  background-color: #191919;
-  max-width: 1400px;
-  margin: 0 auto;
-  position: relative;
-}
-
-body {
-  @apply bg-fabric;
+  @apply bg-fabric bg-[#191919] relative;
 }
 
 .header {
@@ -36,11 +29,11 @@ body {
 }
 
 .sections {
-  @apply mt-28 md:mt-44 sm:px-5 xl:px-16;
+  @apply mt-28 md:mt-44;
 }
 
 .social {
-  @apply text-2xl md:text-3xl lg:flex gap-3 mt-4 lg:gap-0 lg:flex-col items-center lg:fixed lg:bottom-6 lg:left-5 lg:z-50;
+  @apply text-2xl md:text-3xl flex gap-3 mt-4 items-center;
 }
 
 .socials {

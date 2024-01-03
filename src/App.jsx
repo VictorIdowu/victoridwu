@@ -1,10 +1,12 @@
 import Body from "./Components/Body";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <div className="text-primary-100 container font-body my-0 mx-auto ">
+    <main className="text-primary-100 font-body">
       <Body />
-    </div>
+      <Footer />
+    </main>
   );
 }
 

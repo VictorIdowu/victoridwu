@@ -5,19 +5,14 @@ import Footer from "./Footer";
 import About from "./About";
 import Contact from "./Contact";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import Nav from "./Nav";
 
 const Body = () => {
   const [active, setActive] = useState("");
-  const url = window.location.pathname;
-
-  // useEffect(() => {
-  //   console.log(url);
-  //   if (!url) setActive("");
-  // }, [url]);
 
   return (
-    <main className="px-5">
+    <main className="my-0 mx-auto max-w-[1440px] px-4 sm:px-6 xl:px-0">
       <Router>
         <Header setActive={setActive} />
         <Routes>
@@ -26,7 +21,8 @@ const Body = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
-        <Footer active={active} setActive={setActive} />
+
+        <Nav active={active} setActive={setActive} />
       </Router>
     </main>
   );

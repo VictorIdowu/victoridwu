@@ -35,7 +35,6 @@ const About = () => {
       <div className="row-start-2">
         <Stack />
       </div>
-      <Socials display={"hidden"} />
     </section>
   );
 };
