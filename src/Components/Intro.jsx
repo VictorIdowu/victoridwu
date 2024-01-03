@@ -22,7 +22,7 @@ const Intro = () => {
           <br />
         </p>
       </div>
-      <Socials display={"lg:hidden flex"} />
+      <Socials />
       <Stack />
       <Projects />
     </section>

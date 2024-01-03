@@ -15,7 +15,7 @@ const Contact = (props) => {
           Got a question or proposal? Go ahead. I'm Open To Freelance,
           Internship and Junior Developer Roles. Get In Touch With Me
         </p>
-        <Socials display={"flex"} />
+        <Socials />
       </div>
       <aside
         data-aos="fade-up-left"

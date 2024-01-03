@@ -2,12 +2,9 @@ import { AiFillGithub } from "react-icons/ai";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { Icon } from "@iconify/react";
 
-const Socials = ({ display }) => {
+const Socials = () => {
   return (
-    <aside
-      data-aos="fade-up"
-      className={`social ease-in duration-700 ${display} `}
-    >
+    <aside data-aos="fade-up" className={`social ease-in duration-700`}>
       <a
         className="socials"
         rel="noopener noreferrer"
@@ -32,7 +29,6 @@ const Socials = ({ display }) => {
       >
         <Icon icon="ri:twitter-x-fill" className="scale-75" />
       </a>
-      <div className="hidden lg:block w-px h-20 bg-primary-100"></div>
     </aside>
   );
 };

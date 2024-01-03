@@ -6,6 +6,7 @@ import About from "./About";
 import Contact from "./Contact";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useState } from "react";
+import Nav from "./Nav";
 
 const Body = () => {
   const [active, setActive] = useState("");
@@ -21,7 +22,7 @@ const Body = () => {
           <Route path="/projects" element={<Projects />} />
         </Routes>
 
-        <Footer active={active} setActive={setActive} />
+        <Nav active={active} setActive={setActive} />
       </Router>
     </main>
   );

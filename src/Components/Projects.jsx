@@ -70,7 +70,7 @@ const Projects = () => {
   });
 
   return (
-    <section ref={ref} className="sections mb-10">
+    <section ref={ref} className="sections mb-20">
       <h2 data-aos="fade-down" className={`h2 mb-7 ease-in duration-300 `}>
         My Projects
       </h2>
@@ -84,7 +84,6 @@ const Projects = () => {
           <Project items={project} key={i + 1} />
         ))}
       </motion.section>
-      <Socials display={"hidden"} />
     </section>
   );
 };
