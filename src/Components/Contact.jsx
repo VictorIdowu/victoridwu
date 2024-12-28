@@ -12,8 +12,8 @@ const Contact = (props) => {
           Reach Out!
         </h2>
         <p data-aos="fade-up-left" className="text">
-          Got a question or proposal? Go ahead. I'm Open To Freelance,
-          Internship and Junior Developer Roles. Get In Touch With Me
+          Got a question or proposal? Go ahead. I'm open to work. Get in touch
+          with me
         </p>
         <Socials />
       </div>
