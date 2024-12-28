@@ -36,10 +36,6 @@ body {
   @apply text-2xl md:text-3xl flex gap-3 mt-4 items-center;
 }
 
-.socials {
-  @apply md:mb-4 hover:animate-spin;
-}
-
 .project-links {
   @apply text-3xl px-3 text-secondary-200 flex place-content-between absolute left-1 right-1 top-4 sm:top-14 sm:text-4xl lg:opacity-0 ease-in duration-500;
 }
