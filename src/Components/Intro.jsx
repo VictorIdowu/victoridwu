@@ -13,13 +13,17 @@ const Intro = () => {
       />
       <div data-aos="fade-right" className={`ease-in duration-500 `}>
         <p className="text">Hello, I'm Victor</p>
-        <h1 className="font-bold text-3xl md:text-6xl uppercase mx-0 mt-3.5 mb-10">
+        <h1 className="font-bold text-3xl md:text-6xl uppercase mx-0 my-3.5">
           A front-end <br /> Engineer.
         </h1>
         <p className="text text-secondary-100">
-          I enjoy making interactive and animated web pages
-          <br /> to ease user experience
-          <br />
+          With over 2 years of professional experience specializing in web
+          development and product design technologies. Skilled in building
+          large-scale systems and SaaS products, with a strong focus on solving
+          complex problems and delivering high-performance, scalable solutions.
+          Passionate about leveraging modern web technologies to craft
+          interactive, animated web pages that enhance user experience and drive
+          product success.
         </p>
       </div>
       <Socials />
