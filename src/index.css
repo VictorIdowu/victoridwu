@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-  @apply fixed py-4 px-3 sm:py-5 mx-0 sm:mx-5 md:px-10 inset-x-0 top-0 z-50 backdrop-blur-md;
+  @apply fixed py-4 sm:py-5 left-0 right-0 top-0 z-50 backdrop-blur-md bg-transparent;
 }
 
 .h2 {

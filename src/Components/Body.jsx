@@ -1,7 +1,6 @@
 import Intro from "./Intro";
 import Projects from "./Projects";
 import Header from "./Header";
-import Footer from "./Footer";
 import About from "./About";
 import Contact from "./Contact";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -12,7 +11,7 @@ const Body = () => {
   const [active, setActive] = useState("");
 
   return (
-    <main className="my-0 mx-auto max-w-[1440px] px-4 sm:px-6 xl:px-0">
+    <main className="my-0 mx-auto max-w-[1000px] px-4 sm:px-6 xl:px-0">
       <Router>
         <Header setActive={setActive} />
         <Routes>

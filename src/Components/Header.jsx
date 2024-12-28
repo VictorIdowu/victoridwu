@@ -23,27 +23,28 @@ const Header = ({ setActive }) => {
   }, []);
 
   return (
-    <header
-      data-aos="fade-down"
-      className={`header flex place-content-between ease-in duration-500 bg-transparent`}
-    >
-      <Link
-        onClick={() => setActive("")}
-        to="/"
-        className="md:text-2xl font-medium cursor-pointer hover"
+    <header data-aos="fade-down" className="header">
+      <div
+        className={`flex place-content-between ease-in duration-500 max-w-[1100px] mx-auto px-3`}
       >
-        Victor Idowu
-      </Link>
-      <p className="text-xs items-center flex gap-2">
-        {time}
-        <img
-          alt="🇳🇬"
-          draggable="false"
-          src="https://abs-0.twimg.com/emoji/v2/svg/1f1f3-1f1ec.svg"
-          title="Flag of Nigeria"
-          className="w-4 pb-1"
-        ></img>
-      </p>
+        <Link
+          onClick={() => setActive("")}
+          to="/"
+          className="md:text-2xl font-medium cursor-pointer hover"
+        >
+          Victor Idowu
+        </Link>
+        <p className="text-xs items-center flex gap-2">
+          {time}
+          <img
+            alt="🇳🇬"
+            draggable="false"
+            src="https://abs-0.twimg.com/emoji/v2/svg/1f1f3-1f1ec.svg"
+            title="Flag of Nigeria"
+            className="w-4 pb-1"
+          ></img>
+        </p>
+      </div>
     </header>
   );
 };

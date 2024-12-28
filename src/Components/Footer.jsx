@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <div className="border-t-[0.002px] border-primary-300 mb-24 flex flex-col items-center w-full text-sm py-20 gap-10">
+    <div className="border-t-[0.002px] border-primary-300 mb-24 flex flex-col items-center w-full text-sm py-20 gap-10 max-w-[1000px] mx-auto">
       <h5 className="">Built with:</h5>
       <div className="flex gap-4">
         <div className="flex gap-1 items-center">
