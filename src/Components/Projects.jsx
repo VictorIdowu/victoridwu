@@ -5,11 +5,25 @@ import img3 from "../imgs/project3.png";
 import img4 from "../imgs/project4.png";
 import img5 from "../imgs/yourGalApp.png";
 import img6 from "../imgs/MovieBox.png";
-import Socials from "./Socials";
-import { useRef } from "react";
-import { motion, useScroll } from "framer-motion";
+import img7 from "../imgs/filedrive.png";
 
 const projects = [
+  {
+    url: "https://stylconmarketplace.com/",
+    img: "",
+    github: "https://github.com/VictorIdowu",
+    name: "Stylcon",
+    stack: ["Nextjs", "Tailwind", "Shadcn"],
+    description: "Fashion Web App (Fashion production assistant)",
+  },
+  {
+    url: "https://file-drive-gamma.vercel.app/",
+    img: img7,
+    github: "https://github.com/VictorIdowu/file-drive",
+    name: "FileDrive",
+    stack: ["Nextjs", "Typescript", "Convex", "Clerk", "Shadcn"],
+    description: "File storage (Share files and colarborate)",
+  },
   {
     url: "https://moneybox-swart.vercel.app/",
     img: img6,
@@ -61,29 +75,19 @@ const projects = [
   },
 ];
 
-const Projects = () => {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    smooth: true,
-    offset: ["0 2", "0.01"],
-  });
-
+const Projects = ({ amount = projects.length }) => {
   return (
-    <section ref={ref} className="sections mb-20">
+    <section className="sections mb-20">
       <h2 data-aos="fade-down" className={`h2 mb-7 ease-in duration-300 `}>
         My Projects
       </h2>
-      <motion.section
-        style={{
-          scale: scrollYProgress,
-        }}
+      <div
         className={`grid grid-cols-1 gap-7 sm:gap-10 lg:grid-cols-2 xl:gap-15 ease-in-out duration-1000`}
       >
-        {projects.map((project, i) => (
+        {projects.slice(0, amount).map((project, i) => (
           <Project items={project} key={i + 1} />
         ))}
-      </motion.section>
+      </div>
     </section>
   );
 };

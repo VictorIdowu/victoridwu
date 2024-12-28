@@ -8,7 +8,7 @@ const Project = ({ items }) => {
   return (
     <div
       data-aos="flip-left"
-      className="rounded-lg overflow-hidden shadow-md hover:shadow-lg shadow-primary-300/50 hover:shadow-primary-300/50 relative"
+      className="rounded-lg overflow-hidden shadow-md hover:shadow-lg shadow-primary-300/50 hover:shadow-primary-300/50 h-60 relative"
       onMouseEnter={() => setProjectHovered(true)}
       onMouseLeave={() => setProjectHovered(false)}
     >
@@ -21,7 +21,7 @@ const Project = ({ items }) => {
         <img
           src={items.img}
           alt={items.name}
-          className={`w-full opacity-30 lg:opacity-100 brightness-50  relative ${
+          className={`w-full h-full object-cover opacity-30 lg:opacity-100 brightness-50  relative ${
             projectHovered ? "lg:opacity-30" : ""
           }`}
         />
@@ -50,9 +50,9 @@ const Project = ({ items }) => {
         <h3 className="font-semibold text-xl mb-2 sm:text-3xl">{items.name}</h3>
         <p className="text-base italic sm:text-xl">{items.description}</p>
       </div>
-      <div className="text-xs sm:text-base absolute bottom-2 left-3 flex gap-3 bg-primary-300/50 py-1 px-2 rounded-md">
+      <div className="text-xs absolute bottom-2 left-3 flex gap-3 bg-black/25 py-1 px-2 rounded-md">
         {items.stack.map((item, i) => (
-          <p className="text-secondary-100" key={i + 1}>
+          <p className="text-secondary-200" key={i + 1}>
             {item}
           </p>
         ))}

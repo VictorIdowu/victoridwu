@@ -28,7 +28,7 @@ const Intro = () => {
       </div>
       <Socials />
       <Stack />
-      <Projects />
+      <Projects amount={4} />
     </section>
   );
 };
