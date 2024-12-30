@@ -4,7 +4,7 @@ const Nav = ({ active, setActive }) => {
   return (
     <footer className={`footer ease-in duration-500 bg-basketball`}>
       <ul className="flex text-base sm:text-xl gap-10 max-w-[1100px] mx-auto">
-        {["Contact", "Projects"].map((item, i) => (
+        {["Projects", "Contact"].map((item, i) => (
           <li key={i + 1} className={`nav `}>
             <Link
               onClick={() => setActive(item)}
@@ -15,6 +15,16 @@ const Nav = ({ active, setActive }) => {
             </Link>
           </li>
         ))}
+        <li className="nav">
+          <Link
+            to="https://drive.google.com/file/d/1DNO09ALYHXqL7ZasuhQfEL80UJJ0jeDZ/view?usp=sharing"
+            className={`hover`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Resume
+          </Link>
+        </li>
       </ul>
     </footer>
   );
