@@ -1,3 +1,4 @@
+import Experience from "./Experience";
 import Projects from "./Projects";
 import Socials from "./Socials";
 import Stack from "./Stack";
@@ -6,7 +7,7 @@ import { motion, useScroll } from "framer-motion";
 const Intro = () => {
   const { scrollYProgress } = useScroll();
   return (
-    <section className="sections xl:pl-5 mb-10">
+    <div className="sections xl:pl-5 mb-10">
       <motion.div
         style={{ scaleX: scrollYProgress }}
         className="bg-secondary-200 z-50 fixed top-0 left-0 right-0 h-1 transform origin-[0%]"
@@ -29,7 +30,8 @@ const Intro = () => {
       <Socials />
       <Stack />
       <Projects amount={4} />
-    </section>
+      <Experience />
+    </div>
   );
 };
 

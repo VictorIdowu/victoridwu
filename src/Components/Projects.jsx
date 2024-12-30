@@ -78,7 +78,7 @@ const projects = [
 
 const Projects = ({ amount = projects.length }) => {
   return (
-    <section className="sections mb-20">
+    <section className="sections">
       <h2 data-aos="fade-down" className={`h2 mb-7 ease-in duration-300 `}>
         My Projects
       </h2>
