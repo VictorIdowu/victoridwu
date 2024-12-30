@@ -7,6 +7,7 @@ import img5 from "../imgs/yourGalApp.png";
 import img6 from "../imgs/MovieBox.png";
 import img7 from "../imgs/filedrive.png";
 import img8 from "../imgs/stylcon.png";
+import img9 from "../imgs/first-collections.png";
 
 const projects = [
   {
@@ -33,6 +34,15 @@ const projects = [
     stack: ["Tailwind", "React"],
     description: "Movie App (Search and Discover)",
   },
+  {
+    url: "https://first-collections.vercel.app/",
+    img: img9,
+    github: "https://github.com/theCephas/first-collection",
+    name: "First Collections",
+    stack: ["Nextjs", "Typescript", "Tailwind"],
+    description: "E-commerce website",
+  },
+
   {
     url: "https://your-gallery.vercel.app/",
     img: img5,
@@ -78,10 +88,13 @@ const projects = [
 
 const Projects = ({ amount = projects.length }) => {
   return (
-    <section className="sections">
-      <h2 data-aos="fade-down" className={`h2 mb-7 ease-in duration-300 `}>
+    <section className={`sections ${amount === projects.length && "mb-32"}`}>
+      <h2 data-aos="fade-down" className={`h2 ease-in duration-300 `}>
         My Projects
       </h2>
+      <p className="mt-1 mb-7 text-secondary-100">
+        Here are a few projects I've worked on:
+      </p>
       <div
         className={`grid grid-cols-1 gap-7 sm:gap-10 lg:grid-cols-2 xl:gap-15 ease-in-out duration-1000`}
       >

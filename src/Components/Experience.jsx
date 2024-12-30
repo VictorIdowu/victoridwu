@@ -29,9 +29,9 @@ const data = [
 
 const Experience = () => {
   return (
-    <section className="sections mb-20">
+    <section className="sections mb-32">
       <h2 data-aos="fade-down" className={`h2 mb-7 ease-in duration-300`}>
-        Experience
+        Work Experience
       </h2>
 
       <div className="flex flex-col gap-6 items-center">

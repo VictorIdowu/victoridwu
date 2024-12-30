@@ -4,6 +4,17 @@ const Nav = ({ active, setActive }) => {
   return (
     <footer className={`footer ease-in duration-500 bg-basketball`}>
       <ul className="flex text-base sm:text-xl gap-10 max-w-[1100px] mx-auto">
+        {active !== "home" && (
+          <li className={`nav`}>
+            <Link
+              onClick={() => setActive("home")}
+              to={`/`}
+              className={`hover`}
+            >
+              Home
+            </Link>
+          </li>
+        )}
         {["Projects", "Contact"].map((item, i) => (
           <li key={i + 1} className={`nav `}>
             <Link
