@@ -6,11 +6,12 @@ import img4 from "../imgs/project4.png";
 import img5 from "../imgs/yourGalApp.png";
 import img6 from "../imgs/MovieBox.png";
 import img7 from "../imgs/filedrive.png";
+import img8 from "../imgs/stylcon.png";
 
 const projects = [
   {
     url: "https://stylconmarketplace.com/",
-    img: "",
+    img: img8,
     github: "https://github.com/VictorIdowu",
     name: "Stylcon",
     stack: ["Nextjs", "Tailwind", "Shadcn"],
