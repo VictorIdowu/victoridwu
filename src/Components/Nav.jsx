@@ -4,7 +4,7 @@ const Nav = ({ active, setActive }) => {
   return (
     <footer className={`footer ease-in duration-500 bg-basketball`}>
       <ul className="flex text-base sm:text-xl gap-10 max-w-[1100px] mx-auto">
-        {active !== "home" && (
+        {active !== "home" && active !== "" && (
           <li className={`nav`}>
             <Link
               onClick={() => setActive("home")}
