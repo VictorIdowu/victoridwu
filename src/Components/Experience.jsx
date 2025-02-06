@@ -2,13 +2,14 @@ import encentral from "../imgs/encentral.jpeg";
 import hng from "../imgs/hng.jpeg";
 
 const data = [
-  // {
-  //   name: "Encentral Solutions Limited",
-  //   role: "Frontend Developer",
-  //   img: encentral,
-  //   period: "Jan 2025 - Present",
-  //   description: "...",
-  // },
+  {
+    name: "Encentral Solutions Limited",
+    role: "Frontend Developer",
+    img: encentral,
+    period: "Jan 2025 - Present",
+    description:
+      "Actively developing next-generation web applications with a strong emphasis on client-side performance and user experience. Designing and implementing high-performance, responsive user interfaces optimized for mobile and tablet devices. Continuously refining and enhancing digital interfaces to improve usability and engagement. Overseeing the development lifecycle, including testing, deployment, and optimization, to ensure software efficiency and reliability. Effectively managing project priorities, adhering to deadlines, and delivering high-quality solutions. Maintaining comprehensive documentation of engineering processes, including design specifications, technical guidelines, and user manuals. Utilizing the latest HTML/CSS standards and advanced JavaScript frameworks to build sophisticated and scalable web interfaces",
+  },
   {
     name: "Encentral Solutions Limited",
     role: "Frontend Developer Intern",
