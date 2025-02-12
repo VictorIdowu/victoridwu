@@ -5,10 +5,10 @@ import { Icon } from "@iconify/react";
 const socials = [
   { icon: <AiFillGithub />, url: "https://github.com/VictorIdowu" },
   { icon: <BiLogoLinkedin />, url: "https://linkedin.com/in/vctoridowu" },
-  {
-    icon: <Icon icon="ri:twitter-x-fill" className="scale-75" />,
-    url: "https://twitter.com/VictorIdowu_",
-  },
+  // {
+  //   icon: <Icon icon="ri:twitter-x-fill" className="scale-75" />,
+  //   url: "https://twitter.com/VictorIdowu_",
+  // },
 ];
 
 const Socials = () => {
