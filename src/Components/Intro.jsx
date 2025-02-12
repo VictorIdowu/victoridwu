@@ -15,7 +15,7 @@ const Intro = () => {
       <div data-aos="fade-right" className={`ease-in duration-500 `}>
         <p className="text">Hello, I'm Victor</p>
         <h1 className="font-bold text-3xl md:text-6xl uppercase mx-0 my-3.5">
-          A front-end <br /> Engineer.
+          A frontend <br /> Developer.
         </h1>
         <p className="text text-secondary-100">
           With over 2 years of professional experience specializing in web
