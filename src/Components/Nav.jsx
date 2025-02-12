@@ -28,7 +28,7 @@ const Nav = ({ active, setActive }) => {
         ))}
         <li className="nav">
           <Link
-            to="https://drive.google.com/file/d/1DNO09ALYHXqL7ZasuhQfEL80UJJ0jeDZ/view?usp=sharing"
+            to="https://drive.google.com/file/d/1U8_0E2rZknKj9oG1XmZl6hVGVLYn-cXd/view?usp=sharing"
             className={`hover`}
             target="_blank"
             rel="noopener noreferrer"
