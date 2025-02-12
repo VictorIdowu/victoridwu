@@ -7,7 +7,10 @@ const Nav = ({ active, setActive }) => {
         {active !== "home" && active !== "" && (
           <li className={`nav`}>
             <Link
-              onClick={() => setActive("home")}
+              onClick={() => {
+                setActive("home");
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
               to={`/`}
               className={`hover`}
             >
@@ -18,7 +21,10 @@ const Nav = ({ active, setActive }) => {
         {["Projects", "Contact"].map((item, i) => (
           <li key={i + 1} className={`nav `}>
             <Link
-              onClick={() => setActive(item)}
+              onClick={() => {
+                setActive(item);
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
               to={`/${item.toLowerCase()}`}
               className={`hover ${active === item && "text-secondary-200"}`}
             >
