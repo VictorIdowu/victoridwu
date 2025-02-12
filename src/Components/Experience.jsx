@@ -6,17 +6,15 @@ const data = [
     name: "Encentral Solutions Limited",
     role: "Frontend Developer",
     img: encentral,
-    period: "Jan 2025 - Present",
-    description:
-      "Actively developing next-generation web applications with a strong emphasis on client-side performance and user experience. Designing and implementing high-performance, responsive user interfaces optimized for mobile and tablet devices. Continuously refining and enhancing digital interfaces to improve usability and engagement. Overseeing the development lifecycle, including testing, deployment, and optimization, to ensure software efficiency and reliability. Effectively managing project priorities, adhering to deadlines, and delivering high-quality solutions. Maintaining comprehensive documentation of engineering processes, including design specifications, technical guidelines, and user manuals. Utilizing the latest HTML/CSS standards and advanced JavaScript frameworks to build sophisticated and scalable web interfaces",
-  },
-  {
-    name: "Encentral Solutions Limited",
-    role: "Frontend Developer Intern",
-    img: encentral,
-    period: "June 2024 - Nov 2024",
-    description:
-      "Developed an employee management system utilizing Angular, Semantic UI, SCSS, and various Angular-related libraries. Responsibilities included API integration, designing and implementing complex state management solutions, and ensuring seamless user interfaces. Additionally, contributed to other rojects with similar tools and frameworks, such as Formantic UI and Angular Material, to deliver responsive and efficient web applications.",
+    period: "June 2024 - Present",
+    description: [
+      `Started as: Frontend Developer Intern – June 2024`,
+      "Promoted to: Full-Time Frontend Developer – Jan 2025",
+      "Technologies: Angular, Typescript, SCSS, Semantic UI, REST APIs.",
+      "Started as an intern, quickly adapted to project requirements and technologies, and displayed a proactive approach to learning, advancing to a full-time role with more complex responsibilities.",
+      "Build next-generation web applications with a strong focus on performance, user experience, and mobile optimization.",
+      "Collaborate closely with backend teams, ensuring seamless API integration, maintaining UI consistency, and enhancing digital interfaces for better usability and engagement.",
+    ],
   },
   {
     name: "HNG Internship",
@@ -66,7 +64,20 @@ const Experience = () => {
                 <p className="text-white/50 tracking-wide text-sm">
                   {item.period}
                 </p>
-                <p className="text-white/75 text-sm pt-4">{item.description}</p>
+                {typeof item.description === "object" ? (
+                  <div className="text-white/75 text-sm pt-4 flex flex-col gap-1">
+                    {item.description.map((text, i) => (
+                      <div className="flex gap-1">
+                        <span>•</span>
+                        <p key={i}>{text}</p>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="text-white/75 text-sm pt-4">
+                    {item.description}
+                  </p>
+                )}
               </div>
             </div>
           </div>
