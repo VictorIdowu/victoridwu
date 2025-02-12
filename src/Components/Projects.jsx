@@ -14,7 +14,7 @@ const projects = [
     url: "https://stylconmarketplace.com/",
     img: img8,
     github: "https://github.com/VictorIdowu",
-    name: "Stylcon",
+    name: "Stylcon Marketplace",
     stack: ["Nextjs", "Tailwind", "Shadcn"],
     description: "Fashion Web App (Fashion production assistant)",
   },
